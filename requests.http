@@ -1,9 +1,16 @@
-@url = http://localhost:8080/api/v3;
+@url = http://localhost:8080/api/v3
 
 GET {{url}}/beers
+Content-Type: application/json
+
+###
+
+GET {{url}}/beers?beerStyle=WHEAT
 
 ###
 
 GET {{url}}/customers
 
 ###
+
+GET http://localhost:8080/api/v3/beers
